@@ -36,10 +36,10 @@ async function getCharacterData() {
 function renderCharacters(characters) {
   const container = document.getElementById("container");
 
-  characters.forEach(character => {
+  characters.forEach((character) => {
     const card = document.createElement("div");
     card.classList.add("card");
-    
+
     const image = document.createElement("img");
     image.classList.add("character-image");
     image.src = character.image;
@@ -59,7 +59,7 @@ function renderCharacters(characters) {
     button.addEventListener("click", () => {
       openModal(character);
     });
-    
+
     card.appendChild(image);
     card.appendChild(name);
     card.appendChild(status);
@@ -69,7 +69,7 @@ function renderCharacters(characters) {
   });
 }
 
- // Función para abrir el modal con los detalles del personaje
+// Función para abrir el modal con los detalles del personaje
 function openModal(character) {
   const modal = document.getElementById("characterModal");
 
