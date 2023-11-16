@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample API Data</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div>
+        <H1>Rick and Morty Characters</H1>
+    </div>
+
+    <div id="container">
+        <!-- Data will be rendered here -->
+    </div>
+
+<!-- Modal para mostrar los detalles del personaje -->
+<div id="characterModal" class="modal">
+    <div id="modalContent" class="modal-content">
+        <a href="#" class="close-button" onclick="closeModal()">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M11 0.7H13V23.3H11z" transform="rotate(-45.001 12 12)"></path>
+                <path d="M0.7 11H23.3V13H0.7z" transform="rotate(-45.001 12 12)"></path>
+            </svg>
+        </a>
+        <h2 id="modalName"></h2>
+        <p id="modalStatus"></p>
+        <p id="modalLocation"></p>
+        <p id="modalSpecies"></p>
+        <p id="modalType"></p>
+        <p id="modalGender"></p>
+        <p id="modalOrigin"></p>
+        <img id="modalImage" class="character-image" alt="">
+    </div>
+</div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
