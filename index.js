@@ -48,12 +48,6 @@ function renderCharacters(characters) {
     const name = document.createElement("h2");
     name.textContent = character.name;
 
-    const status = document.createElement("p");
-    status.textContent = `Status: ${character.status}`;
-
-    const location = document.createElement("p");
-    location.textContent = `Location: ${character.location}`;
-
     const button = document.createElement("button");
     button.textContent = "See more details";
     button.addEventListener("click", () => {
@@ -62,8 +56,6 @@ function renderCharacters(characters) {
 
     card.appendChild(image);
     card.appendChild(name);
-    card.appendChild(status);
-    card.appendChild(location);
     card.appendChild(button);
     container.appendChild(card);
   });
